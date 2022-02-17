@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+      
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+        
+        @media only screen and ( max-width: 800px){
+            #header-title{
+                font-size: 36px;
+            }
+            #header-address{
+                  font-size: 20px;
+            }
+            #carousel-text{
+                font-size: 16px;
+            }
+        }  
+        
+        @media only screen and ( max-width: 480px){
+            #header-title{
+                font-size: 24px;
+            }
+            #header-address{
+                  font-size: 16px;
+            }
+            #carousel-text{
+                font-size: 12px;
+            }
+        }
+        
+  </style>
+    </head>
+<body class="bg-light">
+    <header id="header-box" style="background-image: url(img/header.jpg); margin: auto; height: 220px; width: 100%;">
+        <div class="container py-5">
+            <div class="container text-center">
+                <div class="container">
+                    <h1 id="header-title" class="font-weight-bold" style="color: white;">Vista Word Institute of Computer Education</h1>
+                    <h5 id="header-address" style="color: white;"> Chandpur Industrial Estate Varanasi - 221106</h5>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <nav class="container-fluid navbar navbar-expand-md navbar-dark sticky-top" style="background-color: black"> 
+                <a class="navbar-brand font-weight-bold" href="index.html"> Vista Word Institute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navTarget"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navTarget">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html"> About Us </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html"> Faculty </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html"> Courses </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallary.html"> Gallary </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enquiry.html"> Enquiry </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admission.html"> Admission </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Students</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="classschedule.html">Class Schedule</a>
+                            <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                            <a class="dropdown-item" href="helpdesk.html">Student Helpdesk</a>
+                            <a class="dropdown-item" href="onlineclass.html">Online Classes</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"> Contact Us </a> 
+                    </li>
+                </ul>
+                        <a class="  nav-link text-white font-weight-bold" href="admin.html"> Admin Access</a>
+        </div>
+    </nav><br><br>
+<section>
+    <div>
+        <div style="text-align: center" class="container bg-success text-white py-2"><h3>Student Admission</h3></div><br>
+    <form class="container form-group" action="admission.php" method="post">
+        <div class="row">
+            <div class="col-4">
+                <label for="admission"> Admission Date </label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="date" id="admission" name="admission" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="name">Student Name</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="name" name="name" placeholder="Student Name" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="fname">Father Name</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="fname" name="fname" placeholder="Father Name" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="mname">Mother Name</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="mname" name="mname" placeholder="Mother Name" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="dob"> Date of Birth </label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="date" id="dob" name="dob" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="col-8">
+                <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Male" required>Male</label>
+                </div>
+                <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Female" required>Female</label>
+                </div>
+                <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Other" required>Other</label>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="contact">Contact Number</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="number" id="contact" name="contact" placeholder="Contact" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="address">Address</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="city">City</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="city" name="city" placeholder="City" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="state">State</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="state" name="state" placeholder="State" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="nationality">Nationality</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="nationality" name="nationality" placeholder="Nationality" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="course">Course</label>
+            </div>
+            <div class="col-8">
+                <select class="form-control form-control-sm" id="course" name="course" required>
+                <option value="ADCAP"> ADCAP </option>
+                <option value="ADCA"> ADCA</option>
+                <option value="ADFA"> ADFA </option>
+                <option value="DCA"> DCA </option>
+                <option value="DTP"> DTP </option>
+                <option value="CCC"> CCC </option>
+                <option value="Other"> Other </option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="qualification">Education Qualification </label>
+            </div>
+            <div class="col-8">
+                <select class="form-control form-control-sm" id="qualification" name="qualification" required>
+                <option value="Below-High-School"> Below High School </option>
+                <option value="High-School"> High School</option>
+                <option value="Intermediate"> Intermediate </option>
+                <option value="Under-Graduate"> Under Graduate </option>
+                <option value="Post-Graduate"> Post Graduate </option>
+                <option value="Other"> Other </option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <label for="classes">Class Timing</label>
+            </div>
+            <div class="col-8">
+                <select class="form-control form-control-sm" id="classes" name="classes" required>
+                <option value="07:00 AM to 08:00 AM"> 07:00 AM to 08:00 AM </option>
+                <option value="08:00 AM to 09:00 AM"> 08:00 AM to 09:00 AM </option>
+                <option value="09:00 AM to 10:00 AM"> 09:00 AM to 10:00 AM </option>
+                <option value="10:00 AM to 11:00 AM"> 10:00 AM to 11:00 AM </option>
+                <option value="02:00 PM to 03:00 PM"> 02:00 PM to 03:00 PM </option>
+                <option value="03:00 PM to 04:00 PM"> 03:00 PM to 04:00 PM </option>
+                <option value="04:00 PM to 05:00 PM"> 04:00 PM to 05:00 PM </option>
+                <option value="05:00 PM to 06:00 PM"> 05:00 PM to 06:00 PM </option>
+                <option value="06:00 PM to 07:00 PM"> 06:00 PM to 07:00 PM </option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                
+            </div>
+            <div class="col-8">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+            </form><br><br>
+    </div>
+</section>
+    <footer class="container-fluid fixed-bottom" style="margin: 0px;background-color: black;">
+        <div class="text-center">
+            <p style="margin: 0px" class="text-white"> Copyright © 2021 || Vista Word Institute, Varanasi(U.P.) || All Rights Reserved </p>
+        </div>
+    </footer>
+    </body>
+</html>

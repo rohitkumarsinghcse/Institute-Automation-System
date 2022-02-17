@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Desk</title>
+      
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+        
+        @media only screen and ( max-width: 800px){
+            #header-title{
+                font-size: 36px;
+            }
+            #header-address{
+                  font-size: 20px;
+            }
+            #carousel-text{
+                font-size: 16px;
+            }
+        }  
+        
+        @media only screen and ( max-width: 480px){
+            #header-title{
+                font-size: 24px;
+            }
+            #header-address{
+                  font-size: 16px;
+            }
+            #carousel-text{
+                font-size: 12px;
+            }
+        }
+        
+  </style>
+    </head>
+<body class="bg-light">
+    <header id="header-box" style="background-image: url(img/header.jpg); margin: auto; height: 220px; width: 100%;">
+        <div class="container py-5">
+            <div class="container text-center">
+                <div class="container">
+                    <h1 id="header-title" class="font-weight-bold" style="color: white;">Vista Word Institute of Computer Education</h1>
+                    <h5 id="header-address" style="color: white;"> Chandpur Industrial Estate Varanasi - 221106</h5>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <nav class="container-fluid navbar navbar-expand-md navbar-dark sticky-top" style="background-color: black"> 
+                <a class="navbar-brand font-weight-bold" href="index.html"> Vista Word Institute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navTarget"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navTarget">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html"> About Us </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html"> Faculty </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html"> Courses </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallary.html"> Gallary </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enquiry.html"> Enquiry </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admission.html"> Admission </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Students</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="classschedule.html">Class Schedule</a>
+                            <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                            <a class="dropdown-item" href="helpdesk.html">Student Helpdesk</a>
+                            <a class="dropdown-item" href="onlineclass.html">Online Classes</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"> Contact Us </a> 
+                    </li>
+                </ul>
+                        <a class="  nav-link text-white font-weight-bold" href="admin.html"> Admin Access</a>
+        </div>
+    </nav><br><br>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-thumbnail" src="img/helpline.jpg" >
+            </div>
+            <div class="col-sm-8 "><h3 class="text-center bg-danger text-white py-2">HelpDesk</h3><br>
+            <h3> Vista Word Institute of Computer Education</h3><br>
+            <h4> Contact for any Query and Complains...</h4><br>
+            <h5> Contact Number - 0542 2372442</h5>
+            <h5> Mobile Number - +91 9335522165 </h5>
+            <h5> E-Mail - rkvistaword439@gmail.com </h5>
+        </div>
+    </div><br><br><br><br>
+        
+    </section>
+<section class="container">
+    <div class="container ">
+<div class="row">
+    <div class="col-4">
+    </div>
+        <div class="col-md-4 btn btn-primary">
+        <h4 style="text-align: center">Query & Complain </h4>
+    </div>
+        <div class="col-4">
+    </div>
+ </div><br><br>
+    <form class="container form-group" action="helpdesk.php" method="post">
+        <div class="row">
+            <div class="col-4 text-right">
+                <label for="date">Date </label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="date" id="date" name="date" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4 text-right">
+                <label for="name">Name</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4 text-right">
+                <label for="email">E-Mail Address</label>
+            </div>
+            <div class="col-8">
+                <input class="form-control form-control-sm" type="email" id="email" name="email" placeholder="Enter Your E-mail Address" required>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4 text-right">
+                <label for="message">Messages</label>
+            </div>
+            <div class="col-8">
+                <textarea class="form-control form-control-sm" type="text" id="message" name="message" rows="15" placeholder="Enter Compaint or Message." required></textarea>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-4">
+                
+            </div>
+            <div class="col-8">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+            </form><br><br><br><br>
+    </div>
+</section>
+    
+    
+    
+    <footer class="container-fluid fixed-bottom" style="margin: 0px;background-color: black;">
+        <div class="text-center">
+            <p style="margin: 0px" class="text-white"> Copyright © 2021 || Vista Word Institute, Varanasi(U.P.) || All Rights Reserved </p>
+        </div>
+    </footer>
+    </body>
+</html>
